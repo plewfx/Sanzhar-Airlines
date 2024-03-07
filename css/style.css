@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, select {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1;
+}
+
+[class*="__container"] {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(41, 69, 91, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo img {
+    width: 30%;
+}
+
+.header__logo span {
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.header__logo:hover span {
+    color: #ffa32b;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__list-item a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    
+}
+
+.header__list-item:hover a {
+    color: #ffa32b;
+}
+
+.header__phone {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.header__phone:hover {
+    color: #ffa32b;
+}
+
+.home {
+    background-image: url("/assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0 150px 0;
+    color: #FFFFFF;
+}
+
+.home__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.home__text h1 {
+    font-size: 90px;
+    font-weight: 800;
+    text-shadow: 0px 5px 30px rgba(0,0,0,0.5);
+}
+
+.home__text p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-shadow: 0px 3px 5px rgba(0,0,0,1);
+}
+
+.home__text a {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #ffa32b;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
+}
+
+.home__text a:hover {
+    background-color: #d68822;
+}
+
+.home__image {
+    width: 50%;
+}
+
+.airlines {
+    padding: 100px 0;
+    background-image: url('/assets/pattern.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.airlines__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.airlines__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.airlines__selects {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.airlines__selects div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.airlines__selects select {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.airlines label {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.airlines button {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #ffa32b;    
+}
+
+.airlines button:hover {
+    background-color: #d68822;
+}
+
+.benefits {
+    padding: 100px 0;
+    background-color: #29455b;
+}
+
+.benefits__container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+    color: white;
+}
+
+.benefits__container li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.benefits__container li img {
+    width: 60px;
+}
+
+.benefits__container li h3 {
+    font-size: 25px;
+}
+
+.benefits__container li p {
+    line-height: 1.5;
+}
+
+.popular {
+    padding: 100px 0;
+}
+
+.popular__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.popular__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popular__text h2 {
+    font-size: 40px;
+}
+
+.popular__text p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.popular__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.popular__grid li {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    gap: 15px;
+    background-color: white;
+    padding-right: 10px;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.2);
+}
+
+.popular__grid li img {
+    height: 100%;
+}
+
+.popular__grid li h4 {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #29455b;
+    padding: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
